@@ -1224,6 +1224,8 @@ MonoBehaviour:
   target: {fileID: 4517507992271880143, guid: 4d6d8c4d9f93d234fbcee12d67b823ba, type: 3}
   maskON: {fileID: 8300000, guid: 1172fe6cc484c394081f0810c86cb3d3, type: 3}
   maskOFF: {fileID: 8300000, guid: 748898b2005f27d448f053f9477dc652, type: 3}
+  tOMEffect: {fileID: 676900949786164941, guid: 2e9b52b7f05bf434186b7f9d0c115bdb,
+    type: 3}
   tOMBehaviourAllowed: 0
   tOMMaskChance: 0
   tOMBehaviourAllowedChance: 25
@@ -1250,7 +1252,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 62
   m_CollisionDetection: 0
 --- !u!82 &-6584561416587199125
 AudioSource:

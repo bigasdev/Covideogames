@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,8 +13,11 @@ public class PlayerController : MonoBehaviour
 
     Vector3 input;
     public float yellRange = 5f;
+    public int yellCost = 20;
 
     public Collider actionArea;
+    public LoseScreen loseScreen;
+    public CounterScore score;
 
     AudioSource audioSource;
     public AudioClip washSFX;
@@ -31,6 +35,8 @@ public class PlayerController : MonoBehaviour
     public int peopleHealed = 0;
     public int peopleLost = 0;
 
+    public int peopleLostThreshold = 5;
+
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
@@ -42,8 +48,21 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        ProcessMovement();
-        ProcessActions();
+        if (peopleLost >= peopleLostThreshold || health.infectionLevel >= 100)
+        {
+            LoseGame();
+        }
+        else
+        {
+            ProcessMovement();
+            ProcessActions();
+        }
+
+    }
+
+    private void LoseGame()
+    {
+        loseScreen.lost = true;
     }
 
     float minimumHeldDuration = 1.25f;
@@ -59,9 +78,6 @@ public class PlayerController : MonoBehaviour
             holdingKey = false;
 
         }
-
-
-
         else if (Input.GetKey(KeyCode.Space))
         {
             keyPressedTime += Time.deltaTime;
@@ -91,13 +107,15 @@ public class PlayerController : MonoBehaviour
 
     private void EnforceSocialDistance()
     {
+        if (score.totalScore < yellCost) return;
         foreach (AiController npc in npcs)
         {
             if (Vector3.Distance(this.transform.position, npc.transform.position) < yellRange)
             {
-                npc.changeStatus(Status.SocialDistance);
+                npc.ChangeStatus(Status.SocialDistance);
             }
         }
+        score.ChangeScore(-yellCost);
     }
 
     private void ProcessMovement()
@@ -108,11 +126,6 @@ public class PlayerController : MonoBehaviour
         Move();
     }
 
-    private void InteractWithWorld()
-    {
-        actionArea.enabled = true;
-
-    }
 
     void GetMovementInput()
     {
@@ -146,6 +159,15 @@ public class PlayerController : MonoBehaviour
         {
             if (collision.gameObject.GetComponent<AiController>().wearingMask == false) return;
         }
+    }
+    private void OnDestroy()
+    {
+        foreach (AiController npc in npcs)
+        {
+            if (npc == null) return;
+            npc.gameObject.SetActive(false);
+        }
+        LoseGame();
     }
 
 

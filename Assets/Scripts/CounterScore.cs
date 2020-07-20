@@ -8,7 +8,9 @@ public class CounterScore : MonoBehaviour
 {
     Text text;
     PlayerController player;
-    public int score;
+    public int countingScore;
+    public int totalScore;
+    int scoreModifier = 0;
     public float scoreTickTime = 5f;
     float timeSinceLastScore = Mathf.Infinity;
     // Start is called before the first frame update
@@ -26,12 +28,28 @@ public class CounterScore : MonoBehaviour
             timeSinceLastScore = 0;
             foreach(AiController bot in player.npcs)
             {
-                if (bot.wearingMask) score++;
+                if (bot.wearingMask) countingScore++;
             }
-            score -= player.sickPeople.Count;
+            countingScore -= player.sickPeople.Count;
         }
-        text.text = (score + player.peopleHealed *10 - player.peopleLost *10).ToString();
+        totalScore = (countingScore + player.peopleHealed * 10 - player.peopleLost * 10 + scoreModifier);
+        text.text = GetScore().ToString();
         timeSinceLastScore += Time.deltaTime;
+        if (totalScore > PlayerPrefs.GetInt("HighsScore", 0))
+        {
+            PlayerPrefs.SetInt("HighScore", totalScore);
+        }
+    }
+    public int ChangeScore(int amount)
+    {
+       scoreModifier += amount;
+        return scoreModifier;
+    }
+
+    public int GetScore()
+    {
+        if (totalScore < 0) return 0;
+        else return totalScore;
     }
 
 }

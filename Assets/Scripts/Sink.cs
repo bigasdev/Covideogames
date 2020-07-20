@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,6 +23,12 @@ public class Sink : MonoBehaviour
         if (other.transform.parent.CompareTag("Player")) 
         {
             if (player.dirtyHands) player.WashHands();
+            else PlayFailedActionSound();
         }
+    }
+
+    private void PlayFailedActionSound()
+    {
+        throw new NotImplementedException();
     }
 }

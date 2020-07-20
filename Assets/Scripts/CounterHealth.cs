@@ -21,7 +21,7 @@ public class CounterHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        text.text = ((100 - diseaseCounter.infectionLevel).ToString() + "%");
+        text.text = (((int)(100 - diseaseCounter.infectionLevel)).ToString() + "%");
     }
 }
 

@@ -34,13 +34,17 @@ public class Spawner : MonoBehaviour
 
     public IEnumerator SpawnNPC()
     {
+        yield return new WaitForSeconds(spawnTimer);
         int i = 0;
-        while (i < spawnLimit)
+        //while (i < spawnLimit)
+        while (true) 
         {
             GameObject newNPC = Instantiate(npcPrefabs[Random.Range(0, npcPrefabs.Length)], spawnLocation.position, Quaternion.identity, npcHolder.transform);
             audioSource.PlayOneShot(spawnSFX);
             i++;
+            spawnTimer *= .95f;
             yield return new WaitForSeconds(spawnTimer);
+           
         }
     }
 }

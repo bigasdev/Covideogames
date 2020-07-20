@@ -1073,6 +1073,8 @@ MonoBehaviour:
   actionRange: 2
   yellRange: 5
   actionArea: {fileID: 414025245977496384}
+  loseScreen: {fileID: 0}
+  score: {fileID: 0}
   washSFX: {fileID: 8300000, guid: d5737bdd10929cc439faab65e8d3f6df, type: 3}
   npcs: []
   sinks: []
@@ -1080,6 +1082,7 @@ MonoBehaviour:
   dirtyHands: 0
   peopleHealed: 0
   peopleLost: 0
+  peopleLostThreshold: 5
 --- !u!195 &266321538
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2014,7 +2017,7 @@ BoxCollider:
   m_GameObject: {fileID: 6668875393898984349}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
