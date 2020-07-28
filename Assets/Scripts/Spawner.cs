@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class Spawner : MonoBehaviour
 {
+    
     public Transform spawnLocation;
     public GameObject[] npcPrefabs;
     public GameObject npcHolder;
@@ -36,8 +38,7 @@ public class Spawner : MonoBehaviour
     {
         yield return new WaitForSeconds(spawnTimer);
         int i = 0;
-        //while (i < spawnLimit)
-        while (true) 
+        while (i < spawnLimit)
         {
             GameObject newNPC = Instantiate(npcPrefabs[Random.Range(0, npcPrefabs.Length)], spawnLocation.position, Quaternion.identity, npcHolder.transform);
             audioSource.PlayOneShot(spawnSFX);

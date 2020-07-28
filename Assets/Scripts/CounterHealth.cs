@@ -10,6 +10,8 @@ public class CounterHealth : MonoBehaviour
     Text text;
     PlayerController player;
     Health diseaseCounter;
+
+    public CanvasGroup sickPlayer;
     // Start is called before the first frame update
     void Awake()
     {
@@ -22,6 +24,10 @@ public class CounterHealth : MonoBehaviour
     void Update()
     {
         text.text = (((int)(100 - diseaseCounter.infectionLevel)).ToString() + "%");
+        if (sickPlayer != null)
+        {
+            sickPlayer.alpha = diseaseCounter.infectionLevel/100;
+        }
     }
 }
 

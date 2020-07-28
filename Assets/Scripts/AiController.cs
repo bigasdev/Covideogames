@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SocialPlatforms;
 
 public enum Status
 {
@@ -21,12 +22,15 @@ public class AiController : MonoBehaviour
     AudioSource audioSource;
     public AudioClip maskON;
     public AudioClip maskOFF;
+    public AudioClip failedAction;
 
     //tOM = takeoffmask
+    public ParticleSystem pOMEffect;
     public ParticleSystem tOMEffect;
-    public bool tOMBehaviourAllowed = false;
+    public bool tOMBehaviourAllowed = true;
+    public bool tOMBehaviourActivated = false;
     public float tOMMaskChance = 0;
-    public float tOMBehaviourAllowedChance = 25f;
+    public float tOMBehaviourActivatedChance = 25f;
     public float tOMCooldown = 10f;
     float tOMTimer = 0f;
 
@@ -35,14 +39,24 @@ public class AiController : MonoBehaviour
     public bool wearingMask = false;
     public bool goHospital = false;
 
-    public float wanderRadius = 10;
-    public float wanderDistance = 10;
-    public float wanderJitter = 5;
-
     public Status status = Status.Normal;
     float timeInThisStatus = 0f;
     public float socialDistance = 2f;
     GameObject socialDistanceIndicator;
+
+    public float movementAccuracy = 3f;
+    GameObject[] goalLocations;
+    float speedMult;
+
+    public float minTimeToStay = 1f;
+    public float maxTimeToStay = 5f;
+    float timeStayed = 0f;
+    float timeToStay;
+    bool checkedForTime = false;
+
+    float actionCooldown = 1f;
+    float cooldownTimer = Mathf.Infinity;
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -52,26 +66,28 @@ public class AiController : MonoBehaviour
         mask = gameObject.transform.Find("BaseCharacter").gameObject;
         mask = mask.gameObject.transform.Find("Specifics").gameObject;
         mask = mask.gameObject.transform.Find("Mask").gameObject;
-        hospitalWaypoint = GameObject.FindGameObjectWithTag("Finish").transform;
+        if(GameObject.FindGameObjectWithTag("Finish") != null) hospitalWaypoint = GameObject.FindGameObjectWithTag("Finish").transform;
         audioSource = this.GetComponent<AudioSource>();
         socialDistanceIndicator = gameObject.transform.Find("Social Distance Indicator").gameObject;
+        goalLocations = GameObject.FindGameObjectsWithTag("Waypoint");
 
     }
     void Start()
     {
         player.npcs.Add(this);
+        ResetAgent();
         DetermineMaskBehaviour();
+        ChooseRandomWaypoint();
     }
 
     private void DetermineMaskBehaviour()
     {
-        if (UnityEngine.Random.Range(0, 100) < tOMBehaviourAllowedChance)
+        if (!tOMBehaviourAllowed) return;
+        if (UnityEngine.Random.Range(0, 100) < tOMBehaviourActivatedChance)
         {
-            tOMBehaviourAllowed = true;
+            tOMBehaviourActivated = true;
         }
     }
-
-
 
     void Seek(Vector3 location)
     {
@@ -85,30 +101,18 @@ public class AiController : MonoBehaviour
         agent.SetDestination(this.transform.position - fleeVector);
     }
 
-    Vector3 wanderTarget = Vector3.zero;
-    void Wander()
-    {
-        wanderTarget += new Vector3(UnityEngine.Random.Range(-1f, 1f) * wanderJitter, 0,
-                                UnityEngine.Random.Range(-1f, 1f) * wanderJitter);
-
-        wanderTarget.Normalize();
-        wanderTarget *= wanderRadius;
-
-        Vector3 targetLocal = wanderTarget + new Vector3(0, 0, wanderDistance);
-        Vector3 targetWorld = this.gameObject.transform.InverseTransformVector(targetLocal);
-        Seek(targetWorld);
-    }
     void Update()
     {
         NavigationBehaviour();
         TakeOffMaskBehaviour();
         ProcessStates();
+        cooldownTimer += Time.deltaTime;
     }
 
     private void ProcessStates()
     {
         timeInThisStatus += Time.deltaTime;
-        if (status == Status.SocialDistance & timeInThisStatus > 3f)
+        if (status == Status.SocialDistance & timeInThisStatus > 5f)
         {
             ChangeStatus(Status.Normal);
         }
@@ -118,27 +122,63 @@ public class AiController : MonoBehaviour
     {
         if (goHospital)
         {
-
+            if(agent.destination != hospitalWaypoint.transform.position)
+            {
+                agent.SetDestination(hospitalWaypoint.transform.position);
+            }
         }
         else if (status == Status.SocialDistance)
         {
-            List<Vector3> fleeTargets = new List<Vector3>();
-
-            foreach (AiController npc in player.npcs)
-            {
-                if (Vector3.Distance(this.transform.position, npc.transform.position) < socialDistance)
-                {
-                    fleeTargets.Add(npc.transform.position);
-                }
                 Flee();
+                    }
+        //else Wander();
+        else WaypointWander();
+    }
+
+    private void WaypointWander()
+    {
+        CycleWaypoints();
+    }
+
+    public void ChooseRandomWaypoint()
+    {
+        agent.SetDestination(goalLocations[UnityEngine.Random.Range(0, goalLocations.Length)].transform.position);
+
+    }
+    public void CycleWaypoints()
+    {
+        
+        if (agent.remainingDistance < movementAccuracy)
+        {
+            if (!checkedForTime)
+            {
+                timeToStay = UnityEngine.Random.Range(minTimeToStay, maxTimeToStay);
+                checkedForTime = true;
             }
+            timeStayed += Time.deltaTime;
+            ResetAgent();
+
+            if (timeStayed > timeToStay)
+            {
+                timeStayed = 0;
+                checkedForTime = false;
+                ChooseRandomWaypoint();
+            }
+           
         }
-        else Wander();
+    }
+    private void ResetAgent()
+    {
+        speedMult = UnityEngine.Random.Range(0.5f, 1.5f);
+        agent.speed = 1.5f * speedMult;
+        agent.angularSpeed = 300;
+
+        agent.ResetPath();
     }
 
     private void TakeOffMaskBehaviour()
     {
-        if (tOMBehaviourAllowed)
+        if (tOMBehaviourActivated)
         {
             if (!wearingMask) return;
             tOMTimer += Time.deltaTime;
@@ -156,16 +196,18 @@ public class AiController : MonoBehaviour
     {
         mask.SetActive(true);
         wearingMask = true;
-        health.infectionRate *= .25f;
-        health.spreadMultiplier *= .25f;
+        health.infectionMultiplier -= .75f;
+        health.spreadMultiplier -= .75f;
         audioSource.PlayOneShot(maskON);
+        ParticleSystem particle = Instantiate(pOMEffect, this.gameObject.transform);
+        Destroy(particle, 2f);
     }
     private void TakeOffMask()
     {
         mask.SetActive(false);
         wearingMask = false;
-        health.infectionRate = 1;
-        health.spreadMultiplier = 1;
+        health.infectionMultiplier += .75f;
+        health.spreadMultiplier += .75f;
         audioSource.PlayOneShot(maskOFF);
         ParticleSystem particle = Instantiate(tOMEffect, this.gameObject.transform);
         Destroy(particle, 2f);
@@ -173,7 +215,10 @@ public class AiController : MonoBehaviour
 
     public void GoToHospital()
     {
+        ResetAgent();
+        agent.speed = 2f;
         goHospital = true;
+        tOMBehaviourActivated = false;
         agent.speed = agent.speed * runFactor;
         agent.SetDestination(hospitalWaypoint.position);
     }
@@ -188,27 +233,33 @@ public class AiController : MonoBehaviour
     {
         if (other.transform.parent.CompareTag("Player"))
         {
-            if (wearingMask && health.isSick) GoToHospital();
-            if (player.dirtyHands == false)
+            if (wearingMask && health.isSick && hospitalWaypoint!= null) GoToHospital();
+            if (cooldownTimer > actionCooldown)
             {
-
-                if (!wearingMask)
+                cooldownTimer = 0;
+                if (player.dirtyHands == false)
                 {
-                    WearMask();
-                    player.dirtyHands = true;
+
+                    if (!wearingMask)
+                    {
+                        WearMask();
+                        player.dirtyHands = true;
+                    }
+                    else PlayFailedActionSound();
                 }
+                else PlayFailedActionSound();
             }
-            else PlayFailedActionSound();
         }
     }
 
     private void PlayFailedActionSound()
     {
-        throw new NotImplementedException();
+        audioSource.PlayOneShot(failedAction);
     }
 
     private void HospitalTrigger(Collider other)
     {
+        if (hospitalWaypoint == null) return;
         if (other.gameObject.transform == hospitalWaypoint.transform)
         {
             player.npcs.Remove(this);
@@ -220,15 +271,20 @@ public class AiController : MonoBehaviour
 
     public void ChangeStatus(Status newStatus)
     {
+        ResetAgent();
         status = newStatus;
         if (newStatus == Status.SocialDistance)
         {
             socialDistanceIndicator.SetActive(true);
             timeInThisStatus = 0;
+            ResetAgent();
+            agent.speed = 2f;
 
         }
         if (newStatus == Status.Normal)
         {
+            ResetAgent();
+            ChooseRandomWaypoint();
             socialDistanceIndicator.SetActive(false);
             timeInThisStatus = 0;
         }

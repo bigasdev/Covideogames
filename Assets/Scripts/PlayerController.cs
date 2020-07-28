@@ -14,6 +14,10 @@ public class PlayerController : MonoBehaviour
     Vector3 input;
     public float yellRange = 5f;
     public int yellCost = 20;
+    public float yellCooldown = 20;
+    float yellTimer = Mathf.Infinity;
+    public ParticleSystem yellEffect;
+    public AudioClip yellSound;
 
     public Collider actionArea;
     public LoseScreen loseScreen;
@@ -21,6 +25,7 @@ public class PlayerController : MonoBehaviour
 
     AudioSource audioSource;
     public AudioClip washSFX;
+
 
 
     public List<AiController> npcs;
@@ -37,6 +42,8 @@ public class PlayerController : MonoBehaviour
 
     public int peopleLostThreshold = 5;
 
+
+
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
@@ -44,7 +51,8 @@ public class PlayerController : MonoBehaviour
         sinks = new List<Sink>();
         sickPeople = new List<Health>();
         health = GetComponent<Health>();
-        health.infectionRate *= .25f;
+        health.infectionMultiplier -= .75f;
+
     }
     void Update()
     {
@@ -57,12 +65,7 @@ public class PlayerController : MonoBehaviour
             ProcessMovement();
             ProcessActions();
         }
-
-    }
-
-    private void LoseGame()
-    {
-        loseScreen.lost = true;
+        yellTimer += Time.deltaTime;
     }
 
     float minimumHeldDuration = 1.25f;
@@ -70,7 +73,7 @@ public class PlayerController : MonoBehaviour
     bool holdingKey = false;
     private void ProcessActions()
     {
-     
+
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -107,15 +110,21 @@ public class PlayerController : MonoBehaviour
 
     private void EnforceSocialDistance()
     {
-        if (score.totalScore < yellCost) return;
-        foreach (AiController npc in npcs)
+        //if (score.totalScore < yellCost) return;
+        if (yellTimer > yellCooldown)
         {
-            if (Vector3.Distance(this.transform.position, npc.transform.position) < yellRange)
+            yellTimer = 0;
+            yellEffect.Play();
+            audioSource.PlayOneShot(yellSound);
+            foreach (AiController npc in npcs)
             {
-                npc.ChangeStatus(Status.SocialDistance);
+                if (Vector3.Distance(this.transform.position, npc.transform.position) < yellRange)
+                {
+                    npc.ChangeStatus(Status.SocialDistance);
+                }
             }
         }
-        score.ChangeScore(-yellCost);
+        //score.ChangeScore(-yellCost);
     }
 
     private void ProcessMovement()
@@ -169,6 +178,10 @@ public class PlayerController : MonoBehaviour
         }
         LoseGame();
     }
-
+    private void LoseGame()
+    {
+        loseScreen.lost = true;
+    }
 
 }
+

@@ -1,0 +1,683 @@
+fileFormatVersion: 2
+guid: c17f5024a008ad942ae4ac088b102ef1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5409196152001552055
+    second: Alcool.em.gel_0
+  - first:
+      213: 7713910821473680367
+    second: Alcool.em.gel_1
+  - first:
+      213: -6596956245587130384
+    second: Alcool.em.gel_2
+  - first:
+      213: 7519416678232600859
+    second: Alcool.em.gel_3
+  - first:
+      213: 3782479134011424051
+    second: Alcool.em.gel_4
+  - first:
+      213: 3664207271211533457
+    second: Alcool.em.gel_5
+  - first:
+      213: -4076252880364286467
+    second: Alcool.em.gel_6
+  - first:
+      213: -4222601639246463767
+    second: Alcool.em.gel_7
+  - first:
+      213: 789278726340133791
+    second: Alcool.em.gel_8
+  - first:
+      213: -6084524577187961930
+    second: Alcool.em.gel_9
+  - first:
+      213: 1581483600996708653
+    second: Alcool.em.gel_10
+  - first:
+      213: -3713544146389929430
+    second: Alcool.em.gel_11
+  - first:
+      213: -295958793939237295
+    second: Alcool.em.gel_12
+  - first:
+      213: -7430363014658519405
+    second: Alcool.em.gel_13
+  - first:
+      213: 7183293657537997116
+    second: Alcool.em.gel_14
+  - first:
+      213: 5632586293535977475
+    second: Alcool.em.gel_15
+  - first:
+      213: 2242144616159327796
+    second: Alcool.em.gel_16
+  - first:
+      213: 4433209601363820011
+    second: Alcool.em.gel_17
+  - first:
+      213: 8879779568759406599
+    second: Alcool.em.gel_18
+  - first:
+      213: 2095393604764118825
+    second: Alcool.em.gel_19
+  - first:
+      213: -5046988483346398093
+    second: Alcool.em.gel_20
+  - first:
+      213: 2185996197089983039
+    second: Alcool.em.gel_21
+  - first:
+      213: 860626614368209940
+    second: Alcool.em.gel_22
+  - first:
+      213: -7250063648778111292
+    second: Alcool.em.gel_23
+  - first:
+      213: -7775036232205739196
+    second: Alcool.em.gel_24
+  - first:
+      213: -9185887933532464577
+    second: Alcool.em.gel_25
+  - first:
+      213: -5646931568962505225
+    second: Alcool.em.gel_26
+  - first:
+      213: -8572789428933133901
+    second: Alcool.em.gel_27
+  - first:
+      213: -113883654420544436
+    second: Alcool.em.gel_28
+  - first:
+      213: -4562329206462288398
+    second: Alcool.em.gel_0
+  - first:
+      213: -1773554475419943009
+    second: Alcool.em.gel_1
+  - first:
+      213: -3249734993768860458
+    second: Alcool.em.gel_2
+  - first:
+      213: -2197523196949768721
+    second: Alcool.em.gel_3
+  - first:
+      213: 4540946015779140138
+    second: Alcool.em.gel_4
+  - first:
+      213: -574125558381179741
+    second: Alcool.em.gel_5
+  - first:
+      213: -3741676223284000794
+    second: Alcool.em.gel_6
+  - first:
+      213: 171796647481246042
+    second: Alcool.em.gel_7
+  - first:
+      213: 7799385320901384669
+    second: Alcool.em.gel_8
+  - first:
+      213: -758853671367006997
+    second: Alcool.em.gel_9
+  - first:
+      213: 5280392919525424449
+    second: Alcool.em.gel_10
+  - first:
+      213: -2421528713305650555
+    second: Alcool.em.gel_11
+  - first:
+      213: 3952673755662249833
+    second: Alcool.em.gel_12
+  - first:
+      213: 8898435452325948716
+    second: Alcool.em.gel_13
+  - first:
+      213: -518705295604569576
+    second: Alcool.em.gel_14
+  - first:
+      213: -1301634986483297312
+    second: Alcool.em.gel_15
+  - first:
+      213: -4891792370436537312
+    second: Alcool.em.gel_16
+  - first:
+      213: -1112123606930836729
+    second: Alcool.em.gel_17
+  - first:
+      213: -9182518408485686213
+    second: Alcool.em.gel_18
+  - first:
+      213: 4857395865497520068
+    second: Alcool.em.gel_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Alcool.em.gel_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1400
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fdec6c42c95fa0c0800000000000000
+      internalID: -4562329206462288398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alcool.em.gel_1
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1400
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f3acee9911367e0800000000000000
+      internalID: -1773554475419943009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alcool.em.gel_2
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1400
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d43042bd3f96e2d0800000000000000
+      internalID: -3249734993768860458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alcool.em.gel_3
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1400
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe5d02c9b44d081e0800000000000000
+      internalID: -2197523196949768721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alcool.em.gel_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1050
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22bdb6a75ea40f30800000000000000
+      internalID: 4540946015779140138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alcool.em.gel_5
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1050
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac8734b8db4808f0800000000000000
+      internalID: -574125558381179741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alcool.em.gel_6
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1050
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e7c1a69c45e21cc0800000000000000
+      internalID: -3741676223284000794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alcool.em.gel_7
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 1050
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5109b20428526200800000000000000
+      internalID: 171796647481246042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alcool.em.gel_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 700
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd919be50abfc3c60800000000000000
+      internalID: 7799385320901384669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alcool.em.gel_9
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 700
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be42ba14b920875f0800000000000000
+      internalID: -758853671367006997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alcool.em.gel_10
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 700
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14dfcc23269b74940800000000000000
+      internalID: 5280392919525424449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alcool.em.gel_11
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 700
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a020e0770056ed0800000000000000
+      internalID: -2421528713305650555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alcool.em.gel_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 350
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96fe14fa6d7bad630800000000000000
+      internalID: 3952673755662249833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alcool.em.gel_13
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 350
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2d61a0e5e79d7b70800000000000000
+      internalID: 8898435452325948716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alcool.em.gel_14
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 350
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a206828403dc8f0800000000000000
+      internalID: -518705295604569576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alcool.em.gel_15
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 350
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3517b40e9afede0800000000000000
+      internalID: -1301634986483297312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alcool.em.gel_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0240a25c1ccdc1cb0800000000000000
+      internalID: -4891792370436537312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alcool.em.gel_17
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703bf86c871f090f0800000000000000
+      internalID: -1112123606930836729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alcool.em.gel_18
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34b9b69824219080800000000000000
+      internalID: -9182518408485686213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alcool.em.gel_19
+      rect:
+        serializedVersion: 2
+        x: 1050
+        y: 0
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c74e68ddcfe86340800000000000000
+      internalID: 4857395865497520068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 0c48ab0725c7294478a8aede88d3ed08
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

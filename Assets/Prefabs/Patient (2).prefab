@@ -1200,14 +1200,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213364d4279cca347848618f94d1cacb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infectionRate: 1
+  baseInfectionRate: 0
+  infectionMultiplier: 1
   infectionLevel: 0
   spreadMultiplier: 1
-  baseSpread: 4
+  baseSpreadArea: 4
   spreadArea: 0
+  diseaseSpread: 1
   sicknessEffect: {fileID: 4569330646278126415, guid: 065037b7226892446afcfd9b21c10371,
     type: 3}
   isSick: 0
+  isContagious: 0
+  deathSound: {fileID: 8300000, guid: 8f0d757ef78a29748b50d694f4c453f3, type: 3}
+  deathFX: {fileID: 4569330646278126415, guid: c1ec87a89dcdefa4fbbcdfe83a550596, type: 3}
+  tombstonePrefab: {fileID: 1559419817216514425, guid: b329e1a347ed0e94abf004c8956e3b38,
+    type: 3}
 --- !u!114 &8937598235538774691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1221,23 +1228,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runFactor: 1.25
-  target: {fileID: 4517507992271880143, guid: 4d6d8c4d9f93d234fbcee12d67b823ba, type: 3}
+  target: {fileID: 0}
   maskON: {fileID: 8300000, guid: 1172fe6cc484c394081f0810c86cb3d3, type: 3}
   maskOFF: {fileID: 8300000, guid: 748898b2005f27d448f053f9477dc652, type: 3}
+  failedAction: {fileID: 8300000, guid: 18973b2d625b83b4eb0a9994e3408d19, type: 3}
+  pOMEffect: {fileID: 676900949786164941, guid: 77914d776322da94591f5ed3b513fe46,
+    type: 3}
   tOMEffect: {fileID: 676900949786164941, guid: 2e9b52b7f05bf434186b7f9d0c115bdb,
     type: 3}
-  tOMBehaviourAllowed: 0
+  tOMBehaviourAllowed: 1
+  tOMBehaviourActivated: 0
   tOMMaskChance: 0
-  tOMBehaviourAllowedChance: 25
+  tOMBehaviourActivatedChance: 25
   tOMCooldown: 10
   hospitalWaypoint: {fileID: 0}
   wearingMask: 0
   goHospital: 0
-  wanderRadius: 10
-  wanderDistance: 10
-  wanderJitter: 5
   status: 0
   socialDistance: 5
+  movementAccuracy: 1
+  minTimeToStay: 1
+  maxTimeToStay: 5
 --- !u!54 &1979455471410385858
 Rigidbody:
   m_ObjectHideFlags: 0

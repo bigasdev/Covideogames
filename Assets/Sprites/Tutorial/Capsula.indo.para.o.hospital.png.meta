@@ -1,0 +1,602 @@
+fileFormatVersion: 2
+guid: 4b02c19a830b6c74ab287dbaf2ac4b35
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9118549107277383140
+    second: Capsula.indo.para.o.hospital_0
+  - first:
+      213: 6013087868851347636
+    second: Capsula.indo.para.o.hospital_1
+  - first:
+      213: -2394278841592473583
+    second: Capsula.indo.para.o.hospital_2
+  - first:
+      213: -7249902562471682952
+    second: Capsula.indo.para.o.hospital_3
+  - first:
+      213: -2596678787501268608
+    second: Capsula.indo.para.o.hospital_4
+  - first:
+      213: -8019141504797755769
+    second: Capsula.indo.para.o.hospital_5
+  - first:
+      213: -4528433433952734783
+    second: Capsula.indo.para.o.hospital_6
+  - first:
+      213: 6259936991776531423
+    second: Capsula.indo.para.o.hospital_7
+  - first:
+      213: -8841841318961393326
+    second: Capsula.indo.para.o.hospital_8
+  - first:
+      213: -218666739501928953
+    second: Capsula.indo.para.o.hospital_9
+  - first:
+      213: 178237791647807028
+    second: Capsula.indo.para.o.hospital_10
+  - first:
+      213: 2194735063031636069
+    second: Capsula.indo.para.o.hospital_11
+  - first:
+      213: -8501349177388796963
+    second: Capsula.indo.para.o.hospital_12
+  - first:
+      213: 46600360849539700
+    second: Capsula.indo.para.o.hospital_13
+  - first:
+      213: 7751262628625827988
+    second: Capsula.indo.para.o.hospital_14
+  - first:
+      213: -6316003617538785552
+    second: Capsula.indo.para.o.hospital_15
+  - first:
+      213: -7115427168270034994
+    second: Capsula.indo.para.o.hospital_16
+  - first:
+      213: -2562768494968041807
+    second: Capsula.indo.para.o.hospital_17
+  - first:
+      213: 3009813637259360313
+    second: Capsula.indo.para.o.hospital_18
+  - first:
+      213: -5257730258820049019
+    second: Capsula.indo.para.o.hospital_19
+  - first:
+      213: 6146348669254305007
+    second: Capsula.indo.para.o.hospital_20
+  - first:
+      213: 4241429991261256271
+    second: Capsula.indo.para.o.hospital_21
+  - first:
+      213: -3617204988971551474
+    second: Capsula.indo.para.o.hospital_22
+  - first:
+      213: -8103181850851225023
+    second: Capsula.indo.para.o.hospital_23
+  - first:
+      213: -182862528453374500
+    second: Capsula.indo.para.o.hospital_24
+  - first:
+      213: 6776313368561022689
+    second: Capsula.indo.para.o.hospital_25
+  - first:
+      213: -383835513146143102
+    second: Capsula.indo.para.o.hospital_26
+  - first:
+      213: 7801923602768811280
+    second: Capsula.indo.para.o.hospital_27
+  - first:
+      213: 6119930083703423078
+    second: Capsula.indo.para.o.hospital_28
+  - first:
+      213: -3276241630328576453
+    second: Capsula.indo.para.o.hospital_29
+  - first:
+      213: -7970167588126477216
+    second: Capsula.indo.para.o.hospital_30
+  - first:
+      213: -2827950101841429539
+    second: Capsula.indo.para.o.hospital_31
+  - first:
+      213: -8802010413202648681
+    second: Capsula.indo.para.o.hospital_32
+  - first:
+      213: 7884868775030738097
+    second: Capsula.indo.para.o.hospital_33
+  - first:
+      213: 379541418905975750
+    second: Capsula.indo.para.o.hospital_34
+  - first:
+      213: 2926675088080526114
+    second: Capsula.indo.para.o.hospital_35
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Capsula.indo.para.o.hospital_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1750
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ab6c926e7647180800000000000000
+      internalID: -9118549107277383140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsula.indo.para.o.hospital_1
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1750
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b0681ade87c27350800000000000000
+      internalID: 6013087868851347636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsula.indo.para.o.hospital_2
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1750
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11895a93410d5ced0800000000000000
+      internalID: -2394278841592473583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsula.indo.para.o.hospital_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1400
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c5ea3f70c236b90800000000000000
+      internalID: -7249902562471682952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsula.indo.para.o.hospital_4
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1400
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081e13b866eb6fbd0800000000000000
+      internalID: -2596678787501268608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsula.indo.para.o.hospital_5
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1400
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78630f2e94946b090800000000000000
+      internalID: -8019141504797755769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsula.indo.para.o.hospital_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1050
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c1be34d8c5c721c0800000000000000
+      internalID: -4528433433952734783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsula.indo.para.o.hospital_7
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1050
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3ea270783cfd650800000000000000
+      internalID: 6259936991776531423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsula.indo.para.o.hospital_8
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1050
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2515fee9a287b4580800000000000000
+      internalID: -8841841318961393326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsula.indo.para.o.hospital_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 700
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e6bcb42c327fcf0800000000000000
+      internalID: -218666739501928953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsula.indo.para.o.hospital_10
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 700
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436b7b0c35a397200800000000000000
+      internalID: 178237791647807028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsula.indo.para.o.hospital_11
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 700
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560681069e3457e10800000000000000
+      internalID: 2194735063031636069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsula.indo.para.o.hospital_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 350
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd37e2a17f3250a80800000000000000
+      internalID: -8501349177388796963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsula.indo.para.o.hospital_13
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 350
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47287d208ce85a000800000000000000
+      internalID: 46600360849539700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsula.indo.para.o.hospital_14
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 350
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498c004fa44029b60800000000000000
+      internalID: 7751262628625827988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsula.indo.para.o.hospital_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0feb4886c2c0958a0800000000000000
+      internalID: -6316003617538785552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsula.indo.para.o.hospital_16
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7d91a80bce04d90800000000000000
+      internalID: -7115427168270034994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsula.indo.para.o.hospital_17
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 0
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be0ed7c1a73f6cd0800000000000000
+      internalID: -2562768494968041807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2ce3f1a2df5537c40936477da206c8c0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

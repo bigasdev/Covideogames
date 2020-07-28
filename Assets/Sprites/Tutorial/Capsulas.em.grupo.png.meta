@@ -1,0 +1,566 @@
+fileFormatVersion: 2
+guid: 56872024aa75b774fb82063fd07727c4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6460043497099209730
+    second: Capsulas.em.grupo_0
+  - first:
+      213: -2419604626708010302
+    second: Capsulas.em.grupo_1
+  - first:
+      213: -7231834803022722803
+    second: Capsulas.em.grupo_2
+  - first:
+      213: -4434435065903240192
+    second: Capsulas.em.grupo_3
+  - first:
+      213: -2712144767104829787
+    second: Capsulas.em.grupo_4
+  - first:
+      213: 3020666719368756377
+    second: Capsulas.em.grupo_5
+  - first:
+      213: 1587513331228613597
+    second: Capsulas.em.grupo_6
+  - first:
+      213: -7405600757414275492
+    second: Capsulas.em.grupo_7
+  - first:
+      213: -5147569896362128684
+    second: Capsulas.em.grupo_8
+  - first:
+      213: -6075835366034744954
+    second: Capsulas.em.grupo_9
+  - first:
+      213: 6055913766090311910
+    second: Capsulas.em.grupo_10
+  - first:
+      213: 7716954450685994002
+    second: Capsulas.em.grupo_11
+  - first:
+      213: -8234086517416607068
+    second: Capsulas.em.grupo_12
+  - first:
+      213: -2899730018998247620
+    second: Capsulas.em.grupo_13
+  - first:
+      213: -8913135563130842568
+    second: Capsulas.em.grupo_14
+  - first:
+      213: 4273388788111781691
+    second: Capsulas.em.grupo_15
+  - first:
+      213: 3428590290720328804
+    second: Capsulas.em.grupo_16
+  - first:
+      213: -2162433218559034914
+    second: Capsulas.em.grupo_17
+  - first:
+      213: 5077361398136868280
+    second: Capsulas.em.grupo_18
+  - first:
+      213: -7155913740923004785
+    second: Capsulas.em.grupo_19
+  - first:
+      213: -8345643193802887574
+    second: Capsulas.em.grupo_20
+  - first:
+      213: -3889607263679275600
+    second: Capsulas.em.grupo_21
+  - first:
+      213: 2731913144076957153
+    second: Capsulas.em.grupo_22
+  - first:
+      213: 3326903980259869703
+    second: Capsulas.em.grupo_23
+  - first:
+      213: -1869041048491155707
+    second: Capsulas.em.grupo_24
+  - first:
+      213: -2982267371116461218
+    second: Capsulas.em.grupo_25
+  - first:
+      213: 8891943199393434232
+    second: Capsulas.em.grupo_26
+  - first:
+      213: 8469966341762575544
+    second: Capsulas.em.grupo_27
+  - first:
+      213: -7219042348518701233
+    second: Capsulas.em.grupo_28
+  - first:
+      213: 7720311422164893877
+    second: Capsulas.em.grupo_29
+  - first:
+      213: -3199839694968645558
+    second: Capsulas.em.grupo_30
+  - first:
+      213: -912415187423616434
+    second: Capsulas.em.grupo_31
+  - first:
+      213: 6651563729715566169
+    second: Capsulas.em.grupo_32
+  - first:
+      213: -123823492386178524
+    second: Capsulas.em.grupo_33
+  - first:
+      213: -608024609858799790
+    second: Capsulas.em.grupo_34
+  - first:
+      213: -5249627725878229340
+    second: Capsulas.em.grupo_35
+  - first:
+      213: 5659985453027041740
+    second: Capsulas.em.grupo_36
+  - first:
+      213: -6925474184778165401
+    second: Capsulas.em.grupo_37
+  - first:
+      213: 4159253029584653183
+    second: Capsulas.em.grupo_38
+  - first:
+      213: 4554123425643684713
+    second: Capsulas.em.grupo_39
+  - first:
+      213: -8034607760944596223
+    second: Capsulas.em.grupo_40
+  - first:
+      213: -1684621074274062743
+    second: Capsulas.em.grupo_41
+  - first:
+      213: -1839978287569710304
+    second: Capsulas.em.grupo_42
+  - first:
+      213: 4193020101372720909
+    second: Capsulas.em.grupo_43
+  - first:
+      213: 4243041385666001909
+    second: Capsulas.em.grupo_44
+  - first:
+      213: 2452109116175846163
+    second: Capsulas.em.grupo_45
+  - first:
+      213: -1506170640699621551
+    second: Capsulas.em.grupo_46
+  - first:
+      213: -956632163567654006
+    second: Capsulas.em.grupo_47
+  - first:
+      213: -6222630553818852198
+    second: Capsulas.em.grupo_48
+  - first:
+      213: 352558466359319725
+    second: Capsulas.em.grupo_49
+  - first:
+      213: -7073973486146861735
+    second: Capsulas.em.grupo_50
+  - first:
+      213: -8800623322898743674
+    second: Capsulas.em.grupo_51
+  - first:
+      213: 4069377972350790291
+    second: Capsulas.em.grupo_52
+  - first:
+      213: -7424086216310648006
+    second: Capsulas.em.grupo_53
+  - first:
+      213: -1350532144174317083
+    second: Capsulas.em.grupo_54
+  - first:
+      213: 7669098569302056559
+    second: Capsulas.em.grupo_55
+  - first:
+      213: -738067513632500790
+    second: Capsulas.em.grupo_56
+  - first:
+      213: -1207657214913177929
+    second: Capsulas.em.grupo_57
+  - first:
+      213: 4907571757594637343
+    second: Capsulas.em.grupo_58
+  - first:
+      213: -8273368206134103170
+    second: Capsulas.em.grupo_59
+  - first:
+      213: 8156691146739848846
+    second: Capsulas.em.grupo_60
+  - first:
+      213: 6082713105186898191
+    second: Capsulas.em.grupo_61
+  - first:
+      213: -2303965527509074258
+    second: Capsulas.em.grupo_62
+  - first:
+      213: -8484784143916795088
+    second: Capsulas.em.grupo_63
+  - first:
+      213: -405202857853603629
+    second: Capsulas.em.grupo_64
+  - first:
+      213: 5047245015330357763
+    second: Capsulas.em.grupo_65
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Capsulas.em.grupo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2700
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20cab26755fa6a950800000000000000
+      internalID: 6460043497099209730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsulas.em.grupo_1
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2700
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ca6d206966db6ed0800000000000000
+      internalID: -2419604626708010302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsulas.em.grupo_2
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2700
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d090683009c53ab90800000000000000
+      internalID: -7231834803022722803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsulas.em.grupo_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c2d4d5dc8b572c0800000000000000
+      internalID: -4434435065903240192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsulas.em.grupo_4
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1800
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6384134b68c5ad0800000000000000
+      internalID: -2712144767104829787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsulas.em.grupo_5
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1800
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99cb1d880609be920800000000000000
+      internalID: 3020666719368756377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsulas.em.grupo_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb1418b6faf70610800000000000000
+      internalID: 1587513331228613597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsulas.em.grupo_7
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 900
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5655f109550a3990800000000000000
+      internalID: -7405600757414275492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsulas.em.grupo_8
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 900
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da47d6c3782098b0800000000000000
+      internalID: -5147569896362128684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsulas.em.grupo_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6895ebdfceb4eaba0800000000000000
+      internalID: -6075835366034744954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsulas.em.grupo_10
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e806321c7dea0450800000000000000
+      internalID: 6055913766090311910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsulas.em.grupo_11
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 900
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 214220dcf21281b60800000000000000
+      internalID: 7716954450685994002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2e2eb42ce8b691d47a0b3ab70217abfc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

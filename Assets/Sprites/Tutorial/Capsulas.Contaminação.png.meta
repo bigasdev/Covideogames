@@ -1,0 +1,740 @@
+fileFormatVersion: 2
+guid: f45494c4f6ae9094e8415704f4cbd560
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1227602704106561784
+    second: "Capsulas.Contamina\xE7\xE3o_0"
+  - first:
+      213: -8112521944676323014
+    second: "Capsulas.Contamina\xE7\xE3o_1"
+  - first:
+      213: 7846670562999978198
+    second: "Capsulas.Contamina\xE7\xE3o_2"
+  - first:
+      213: -1749609225184020659
+    second: "Capsulas.Contamina\xE7\xE3o_3"
+  - first:
+      213: 2345671995578564178
+    second: "Capsulas.Contamina\xE7\xE3o_4"
+  - first:
+      213: -7674119910623166774
+    second: "Capsulas.Contamina\xE7\xE3o_5"
+  - first:
+      213: -6475087123733459031
+    second: "Capsulas.Contamina\xE7\xE3o_6"
+  - first:
+      213: -3860709325437154489
+    second: "Capsulas.Contamina\xE7\xE3o_7"
+  - first:
+      213: -1493993294326276431
+    second: "Capsulas.Contamina\xE7\xE3o_8"
+  - first:
+      213: -5107463205711367105
+    second: "Capsulas.Contamina\xE7\xE3o_9"
+  - first:
+      213: 2938253049491615504
+    second: "Capsulas.Contamina\xE7\xE3o_10"
+  - first:
+      213: 5146888930409855435
+    second: "Capsulas.Contamina\xE7\xE3o_11"
+  - first:
+      213: 9099767471993325099
+    second: "Capsulas.Contamina\xE7\xE3o_12"
+  - first:
+      213: 5462451737099589562
+    second: "Capsulas.Contamina\xE7\xE3o_13"
+  - first:
+      213: -2909521812211845138
+    second: "Capsulas.Contamina\xE7\xE3o_14"
+  - first:
+      213: -4202714668445831290
+    second: "Capsulas.Contamina\xE7\xE3o_15"
+  - first:
+      213: 3170956216391929647
+    second: "Capsulas.Contamina\xE7\xE3o_16"
+  - first:
+      213: 5065386023614651484
+    second: "Capsulas.Contamina\xE7\xE3o_17"
+  - first:
+      213: 169013990728537206
+    second: "Capsulas.Contamina\xE7\xE3o_18"
+  - first:
+      213: -1134083529606423817
+    second: "Capsulas.Contamina\xE7\xE3o_19"
+  - first:
+      213: -2592605031926545666
+    second: "Capsulas.Contamina\xE7\xE3o_20"
+  - first:
+      213: -6038566759620996903
+    second: "Capsulas.Contamina\xE7\xE3o_21"
+  - first:
+      213: -8012200787953660669
+    second: "Capsulas.Contamina\xE7\xE3o_22"
+  - first:
+      213: -290475033092466442
+    second: "Capsulas.Contamina\xE7\xE3o_23"
+  - first:
+      213: 6357255889246147361
+    second: "Capsulas.Contamina\xE7\xE3o_24"
+  - first:
+      213: 3010810112493438456
+    second: "Capsulas.Contamina\xE7\xE3o_25"
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2100
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f0a49fb722590110800000000000000
+      internalID: 1227602704106561784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_1"
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 2100
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a31b107f5488a6f80800000000000000
+      internalID: -8112521944676323014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_2"
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 2100
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d8c029bd49f4ec60800000000000000
+      internalID: 7846670562999978198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_3"
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 2100
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47f825fda328b7e0800000000000000
+      internalID: -1749609225184020659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_4"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1750
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25eba0880408d8020800000000000000
+      internalID: 2345671995578564178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_5"
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1750
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acebd8bb99c008590800000000000000
+      internalID: -7674119910623166774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_6"
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1750
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af4924419ed326a0800000000000000
+      internalID: -6475087123733459031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_7"
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1750
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74bc74cc2510c6ac0800000000000000
+      internalID: -3860709325437154489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_8"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1400
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bedddaa305444be0800000000000000
+      internalID: -1493993294326276431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_9"
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1400
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3432306645ae19b0800000000000000
+      internalID: -5107463205711367105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_10"
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1400
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01fe72bb495c6c820800000000000000
+      internalID: 2938253049491615504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_11"
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1400
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9387b763c6d6740800000000000000
+      internalID: 5146888930409855435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_12"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1050
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2601da9d4ed84e70800000000000000
+      internalID: 9099767471993325099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_13"
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 1050
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab75980e9e68ecb40800000000000000
+      internalID: 5462451737099589562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_14"
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 1050
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7bcdcb35d4f97d0800000000000000
+      internalID: -2909521812211845138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_15"
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 1050
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f66f6a645fca5c0800000000000000
+      internalID: -4202714668445831290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_16"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 700
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f8b5cd0ef710c20800000000000000
+      internalID: 3170956216391929647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_17"
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 700
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c97cb30cddb4640800000000000000
+      internalID: 5065386023614651484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_18"
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 700
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674127f3455785200800000000000000
+      internalID: 169013990728537206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_19"
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 700
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa1038d90de240f0800000000000000
+      internalID: -1134083529606423817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_20"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 350
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef2c02da577350cd0800000000000000
+      internalID: -2592605031926545666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_21"
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 350
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d01f4c9683b23ca0800000000000000
+      internalID: -6038566759620996903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_22"
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 350
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30dcae475d1fec090800000000000000
+      internalID: -8012200787953660669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_23"
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 350
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f857641f7608fbf0800000000000000
+      internalID: -290475033092466442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_24"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123d6c09c82893850800000000000000
+      internalID: 6357255889246147361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Capsulas.Contamina\xE7\xE3o_25"
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 700
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5435968db88c920800000000000000
+      internalID: 3010810112493438456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 0031bed35ba63384f8b1ad20518f716a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

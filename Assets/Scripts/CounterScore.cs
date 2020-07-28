@@ -13,6 +13,9 @@ public class CounterScore : MonoBehaviour
     int scoreModifier = 0;
     public float scoreTickTime = 5f;
     float timeSinceLastScore = Mathf.Infinity;
+    public List<AiController> peopleMasked = new List<AiController>();
+
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -28,8 +31,9 @@ public class CounterScore : MonoBehaviour
             timeSinceLastScore = 0;
             foreach(AiController bot in player.npcs)
             {
-                if (bot.wearingMask) countingScore++;
+                if (bot.wearingMask && !peopleMasked.Contains(bot)) peopleMasked.Add(bot);
             }
+            countingScore += peopleMasked.Count;
             countingScore -= player.sickPeople.Count;
         }
         totalScore = (countingScore + player.peopleHealed * 10 - player.peopleLost * 10 + scoreModifier);
@@ -39,6 +43,7 @@ public class CounterScore : MonoBehaviour
         {
             PlayerPrefs.SetInt("HighScore", totalScore);
         }
+
     }
     public int ChangeScore(int amount)
     {
