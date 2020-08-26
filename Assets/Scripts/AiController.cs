@@ -74,7 +74,7 @@ public class AiController : MonoBehaviour
     }
     void Start()
     {
-        player.npcs.Add(this);
+        GameStats.gameStats.npcs.Add(this);
         ResetAgent();
         DetermineMaskBehaviour();
         ChooseRandomWaypoint();
@@ -103,6 +103,12 @@ public class AiController : MonoBehaviour
 
     void Update()
     {
+        if (GameManager.gameManager.gameIsOver)
+        {
+            agent.ResetPath();
+            return;
+        }
+
         NavigationBehaviour();
         TakeOffMaskBehaviour();
         ProcessStates();
@@ -195,6 +201,7 @@ public class AiController : MonoBehaviour
     public void WearMask()
     {
         mask.SetActive(true);
+        GameStats.gameStats.peopleMasked += 1;
         wearingMask = true;
         health.infectionMultiplier -= .75f;
         health.spreadMultiplier -= .75f;
@@ -205,6 +212,7 @@ public class AiController : MonoBehaviour
     private void TakeOffMask()
     {
         mask.SetActive(false);
+        GameStats.gameStats.peopleMasked -= 1;
         wearingMask = false;
         health.infectionMultiplier += .75f;
         health.spreadMultiplier += .75f;
@@ -262,9 +270,11 @@ public class AiController : MonoBehaviour
         if (hospitalWaypoint == null) return;
         if (other.gameObject.transform == hospitalWaypoint.transform)
         {
-            player.npcs.Remove(this);
-            player.sickPeople.Remove(health);
-            player.peopleHealed++;
+            GameStats.gameStats.npcs.Remove(this);
+            GameStats.gameStats.sickPeopleList.Remove(health);
+            GameStats.gameStats.peopleHealed++;
+            if (wearingMask) GameStats.gameStats.peopleMasked--;
+
             Destroy(this.gameObject);
         }
     }

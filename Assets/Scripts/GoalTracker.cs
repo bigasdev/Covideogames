@@ -4,33 +4,35 @@ using UnityEngine;
 
 public class GoalTracker : MonoBehaviour
 {
+    public static GoalTracker goalTracker;
+    public bool noGoal = false;
+
     public Goals goals;
-    public float goalScore = 0;
+    float goalScore = 0;
     bool countingScore = false;
-    public int peopleToMask = 0;
+
+    int peopleToMask = 0;
     bool countingMask = false;
-    public float timeToSurvive = 0;
+
+    float timeToSurvive = 0;
     bool countingSurvival = false;
-    public int peopleToSendToHospital = 0;
+
+    int peopleToSendToHospital = 0;
     bool countingSendHospital = false;
 
-
-
-    float timeSurvived = 0;
-    public PlayerController player;
-    public CounterScore playerScore;
-
-    public WinScreen winScreen;
+    public bool goalsFulfilled = false;
 
     // Start is called before the first frame update
     private void Awake()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         SetGoals();
+        if (goalTracker == null)
+            goalTracker = this.gameObject.GetComponent<GoalTracker>();
     }
 
     private void SetGoals()
     {
+        if (noGoal) return;
         if (goals.highScore.activated)
         {
             goalScore = goals.highScore.highScore;
@@ -64,7 +66,8 @@ public class GoalTracker : MonoBehaviour
     {
         if (ProcessWinConditions())
         {
-            Win();
+            goalsFulfilled = true;
+        
         }
     }
 
@@ -74,36 +77,33 @@ public class GoalTracker : MonoBehaviour
     }
 
     private bool ProcessSendHospital(int peopleToSendToHospital)
-    {
-        if (!countingSendHospital) return true;
-        else if (player.peopleHealed >= peopleToSendToHospital) return true;
+    {        if (!countingSendHospital) return true;
+        else if (GameStats.gameStats.peopleHealed >= peopleToSendToHospital) return true;
         else return false;
     }
 
     bool ProcessScore(float goalScore)
     {
         if (!countingScore) return true;
-        else if (playerScore.GetScore() >= goalScore) return true;
+        else if (GameStats.gameStats.score >= goalScore) return true;
         else return false;
     }
     bool ProcessMasks(int peopleToMask)
     {
         if (!countingMask) return true;
-        if (playerScore.peopleMasked.Count >= peopleToMask) return true;
+        if (GameStats.gameStats.peopleMasked >= peopleToMask) return true;
         else return false;
     }
 
     bool ProcessSurvival(float timeToSurvive)
     {
         if (!countingSurvival) return true;
-        timeSurvived += Time.deltaTime;
-        if (timeSurvived > timeToSurvive) return true;
+        if (GameManager.gameManager.currentTime > timeToSurvive) return true;
         else return false;
     }
 
     public void Win()
     {
-
-        winScreen.won = true;
+        goalsFulfilled = true;
     }
 }

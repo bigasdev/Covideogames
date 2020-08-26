@@ -1754,7 +1754,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 78
+    m_FontSize: 72
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 3
@@ -1765,9 +1765,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Neste Jogo, voc\xEA \xE9 um m\xE9dico. Sua tarefa \xE9 manter todos saud\xE1veis!
-    Ande com WASD ou as setas direcionais e interaja com objetos e pessoas com a
-    barra de espa\xE7o!\n"
+  m_Text: "Neste Jogo, voc\xEA \xE9 um profissional de sa\xFAde. Sua tarefa \xE9
+    manter todos saud\xE1veis! Ande com WASD ou as setas direcionais e interaja com
+    objetos e pessoas com a barra de espa\xE7o.\r\n"
 --- !u!222 &1686819875
 CanvasRenderer:
   m_ObjectHideFlags: 0

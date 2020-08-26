@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,47 +17,38 @@ public class PlayerController : MonoBehaviour
     float yellTimer = Mathf.Infinity;
     public ParticleSystem yellEffect;
     public AudioClip yellSound;
+    public GameObject yellReadyIndicator;
+    bool yellReady = true;
 
     public Collider actionArea;
     public LoseScreen loseScreen;
-    public CounterScore score;
 
     AudioSource audioSource;
     public AudioClip washSFX;
 
-
-
-    public List<AiController> npcs;
-    public List<Sink> sinks;
-    public List<Health> sickPeople;
 
     public bool dirtyHands = false;
 
     Health health;
     private Quaternion targetRotation;
 
-    public int peopleHealed = 0;
-    public int peopleLost = 0;
-
-    public int peopleLostThreshold = 5;
 
 
 
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
-        npcs = new List<AiController>();
-        sinks = new List<Sink>();
-        sickPeople = new List<Health>();
+
         health = GetComponent<Health>();
         health.infectionMultiplier -= .75f;
 
     }
     void Update()
     {
-        if (peopleLost >= peopleLostThreshold || health.infectionLevel >= 100)
+        if (GameManager.gameManager.gameIsOver) return;
+        if (health.infectionLevel >= 100)
         {
-            LoseGame();
+            TriggerPlayerDeath();
         }
         else
         {
@@ -66,6 +56,16 @@ public class PlayerController : MonoBehaviour
             ProcessActions();
         }
         yellTimer += Time.deltaTime;
+        if (yellTimer > yellCooldown)
+        {
+            if (!yellReady)
+            {
+                yellReady = true;
+                GameObject indicator = Instantiate(yellReadyIndicator, this.transform.position, transform.rotation, this.transform);
+                Destroy(indicator, 2f);
+            }
+        }
+
     }
 
     float minimumHeldDuration = 1.25f;
@@ -114,9 +114,10 @@ public class PlayerController : MonoBehaviour
         if (yellTimer > yellCooldown)
         {
             yellTimer = 0;
+            yellReady = false;
             yellEffect.Play();
             audioSource.PlayOneShot(yellSound);
-            foreach (AiController npc in npcs)
+            foreach (AiController npc in GameStats.gameStats.npcs)
             {
                 if (Vector3.Distance(this.transform.position, npc.transform.position) < yellRange)
                 {
@@ -171,16 +172,16 @@ public class PlayerController : MonoBehaviour
     }
     private void OnDestroy()
     {
-        foreach (AiController npc in npcs)
+        foreach (AiController npc in GameStats.gameStats.npcs)
         {
             if (npc == null) return;
             npc.gameObject.SetActive(false);
         }
-        LoseGame();
+        TriggerPlayerDeath();
     }
-    private void LoseGame()
+    private void TriggerPlayerDeath()
     {
-        loseScreen.lost = true;
+        GameManager.gameManager.EndGame();
     }
 
 }

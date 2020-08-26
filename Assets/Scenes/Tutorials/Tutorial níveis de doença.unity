@@ -1834,8 +1834,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Pedestres podem estar saud\xE1veis, febris ou contagiosos. Quando febris,
-    come\xE7am a ficar avermelhados. Os contagiosos liberam v\xEDrus por onde passam."
+  m_Text: "As pessoas podem estar saud\xE1veis, febris ou contagiosas. Quando febris,
+    come\xE7am a ficar avermelhadas. As contagiosas espalham o v\xEDrus por onde
+    passam."
 --- !u!222 &1686819875
 CanvasRenderer:
   m_ObjectHideFlags: 0

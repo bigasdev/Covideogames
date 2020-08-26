@@ -451,11 +451,81 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1283856082644907081, guid: c33b8fce4c5429e4c92fc180a4f0ed03,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1283856082644907081, guid: c33b8fce4c5429e4c92fc180a4f0ed03,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1283856082644907081, guid: c33b8fce4c5429e4c92fc180a4f0ed03,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.minScalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1283856082644907081, guid: c33b8fce4c5429e4c92fc180a4f0ed03,
+        type: 3}
+      propertyPath: InitialModule.startRotation.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1283856082644907081, guid: c33b8fce4c5429e4c92fc180a4f0ed03,
+        type: 3}
+      propertyPath: InitialModule.startRotationX.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1283856082644907081, guid: c33b8fce4c5429e4c92fc180a4f0ed03,
+        type: 3}
+      propertyPath: InitialModule.startRotationY.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1283856082644907081, guid: c33b8fce4c5429e4c92fc180a4f0ed03,
+        type: 3}
+      propertyPath: InitialModule.startRotation.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1283856082644907081, guid: c33b8fce4c5429e4c92fc180a4f0ed03,
+        type: 3}
+      propertyPath: InitialModule.rotation3D
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1283856082644907081, guid: c33b8fce4c5429e4c92fc180a4f0ed03,
+        type: 3}
+      propertyPath: InitialModule.startRotation.minScalar
+      value: 6.283185
+      objectReference: {fileID: 0}
+    - target: {fileID: 1283856082644907081, guid: c33b8fce4c5429e4c92fc180a4f0ed03,
+        type: 3}
+      propertyPath: InitialModule.startRotationY.minScalar
+      value: 6.283185
+      objectReference: {fileID: 0}
+    - target: {fileID: 1283856082644907081, guid: c33b8fce4c5429e4c92fc180a4f0ed03,
+        type: 3}
+      propertyPath: InitialModule.startRotationX.minScalar
+      value: 6.283185
+      objectReference: {fileID: 0}
     - target: {fileID: 3990512193812799541, guid: c33b8fce4c5429e4c92fc180a4f0ed03,
         type: 3}
       propertyPath: m_Name
       value: Water effect
       objectReference: {fileID: 0}
+    - target: {fileID: 4716609060590539992, guid: c33b8fce4c5429e4c92fc180a4f0ed03,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4716609060590539992, guid: c33b8fce4c5429e4c92fc180a4f0ed03,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2f48bb5ee7739984ebec14387e2413d9, type: 2}
+    - target: {fileID: 4716609060590539992, guid: c33b8fce4c5429e4c92fc180a4f0ed03,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c33b8fce4c5429e4c92fc180a4f0ed03, type: 3}
 --- !u!4 &1354474479197612826 stripped

@@ -21,6 +21,8 @@ public class PauseSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.gameManager.gameIsOver) return;
+
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))
         {
             isPaused = !isPaused;

@@ -1765,9 +1765,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Coloque m\xE1scaras nos pedestres apertando a barra de espa\xE7o. Lembre-se
+  m_Text: "Coloque m\xE1scaras nos transeuntes apertando a barra de espa\xE7o. Lembre-se
     de sempre lavar as m\xE3os depois, sen\xE3o n\xE3o poder\xE1 colocar m\xE1scara
-    em mais ningu\xE9m!"
+    em mais ningu\xE9m!\r\n"
 --- !u!222 &1686819875
 CanvasRenderer:
   m_ObjectHideFlags: 0

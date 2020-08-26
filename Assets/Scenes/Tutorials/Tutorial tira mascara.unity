@@ -1835,7 +1835,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Algumas pessoas n\xE3o gostam de usar m\xE1scaras ou n\xE3o acreditam
-    em sua efic\xE1cia. Insista em colocar as m\xE1scaras!"
+    em sua efic\xE1cia. Voc\xEA ter\xE1 de recolocar a m\xE1scara nesses teimosos!
+    Insista!"
 --- !u!222 &1686819875
 CanvasRenderer:
   m_ObjectHideFlags: 0

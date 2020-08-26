@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class Health : MonoBehaviour
@@ -57,10 +55,10 @@ public class Health : MonoBehaviour
 
     private void SetupDiseaseGradient()
     {
-       gradient = new Gradient();
+        gradient = new Gradient();
 
         // Populate the color keys at the relative time 0 and 1 (0 and 100%)
-       GradientColorKey[] colorKey = new GradientColorKey[2];
+        GradientColorKey[] colorKey = new GradientColorKey[2];
         colorKey[0].color = startColor;
         colorKey[0].time = 0.0f;
         colorKey[1].color = endColor;
@@ -80,6 +78,8 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.gameManager.gameIsOver) return;
+
         spreadArea = baseSpreadArea * spreadMultiplier;
         ProcessDisease(FindPeopleInRange(), contagiousPeopleInRange);
         ProcessInfectionMilestones();
@@ -87,11 +87,11 @@ public class Health : MonoBehaviour
 
 
 
-    private  float FindPeopleInRange()
+    private float FindPeopleInRange()
     {
         peopleInRange.Clear();
         contagiousPeopleInRange.Clear();
-        foreach (AiController npc in player.npcs)
+        foreach (AiController npc in GameStats.gameStats.npcs)
         {
             if (npc.transform == this.transform) continue;
             if (Vector3.Distance(this.transform.position, npc.transform.position) < npc.GetComponent<Health>().spreadArea)
@@ -117,7 +117,7 @@ public class Health : MonoBehaviour
             }
         }
         infectionLevel += baseInfectionRate * infectionMultiplier * Time.deltaTime;
-        meshRenderer.material.color = gradient.Evaluate(infectionLevel/100);
+        meshRenderer.material.color = gradient.Evaluate(infectionLevel / 100);
         baseInfectionRate = originalRate;
     }
 
@@ -161,9 +161,14 @@ public class Health : MonoBehaviour
 
     private void Die()
     {
-        player.npcs.Remove(GetComponent<AiController>());
-        player.sickPeople.Remove(this);
-        player.peopleLost++;
+        GameStats.gameStats.npcs.Remove(GetComponent<AiController>());
+        GameStats.gameStats.sickPeopleList.Remove(this);
+        GameStats.gameStats.peopleDead++;
+        if (this.gameObject.GetComponent<AiController>())
+        {
+            if (this.gameObject.GetComponent<AiController>().wearingMask) GameStats.gameStats.peopleMasked--;
+        }
+
         AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position);
         GameObject tombstone = Instantiate(tombstonePrefab, transform.position, Quaternion.identity, transform.parent);
         Destroy(tombstone, 20f);
@@ -173,7 +178,7 @@ public class Health : MonoBehaviour
     private void GetSick()
     {
         isSick = true;
-        if (!this.gameObject.CompareTag("Player")) player.sickPeople.Add(this);
+        if (!this.gameObject.CompareTag("Player")) GameStats.gameStats.sickPeopleList.Add(this);
     }
 
     private void GetContagious()

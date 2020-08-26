@@ -22,7 +22,7 @@ public class Sink : MonoBehaviour
     }
     void Start()
     {
-        player.sinks.Add(this);
+        GameStats.gameStats.sinks.Add(this);
 
     }
     private void Update()

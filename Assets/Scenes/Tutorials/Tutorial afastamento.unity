@@ -1835,8 +1835,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Devemos tomar cuidado para evitar aglomera\xE7\xF5es. Se muitas pessoas
-    come\xE7arem a aparecer e estiverem muito pr\xF3ximas, segure a barra de espa\xE7o
-    para afast\xE1-las!"
+    come\xE7arem a aparecer e a se aglomerar, segure a barra de espa\xE7o para afast\xE1-las!"
 --- !u!222 &1686819875
 CanvasRenderer:
   m_ObjectHideFlags: 0
