@@ -141,10 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnLocation: {fileID: 5847162270774766961}
   npcPrefabs:
-  - {fileID: 8356594950163311984, guid: 38c62b0fd5f4604468dd622fe6270755, type: 3}
-  - {fileID: 4849620341747006559, guid: 8772093fba563e84eae8cb6e8ad22f18, type: 3}
-  - {fileID: 564677369746323900, guid: 7bbdf645b40807c4da6e8c57ccf9647e, type: 3}
-  - {fileID: 2857617936783605661, guid: 67067148687f8b64d93c70eb59fdd104, type: 3}
+  - {fileID: 2857617936783605661, guid: 661641e17e4bb05478c89288003da080, type: 3}
   npcHolder: {fileID: 0}
   spawnTimer: 20
   spawnLimit: 10

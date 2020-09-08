@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    GameObject body;
+    public GameObject body;
     MeshRenderer meshRenderer;
     Color startColor;
     Color endColor = Color.red;
@@ -37,10 +37,9 @@ public class Health : MonoBehaviour
     public GameObject tombstonePrefab;
     private void Awake()
     {
-        body = gameObject.transform.Find("BaseCharacter").gameObject;
-        body = body.gameObject.transform.Find("Body").gameObject;
+
         meshRenderer = body.GetComponent<MeshRenderer>();
-        startColor = meshRenderer.material.color;
+    
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         peopleInRange = new List<Health>();
         contagiousPeopleInRange = new List<Health>();
@@ -55,6 +54,7 @@ public class Health : MonoBehaviour
 
     private void SetupDiseaseGradient()
     {
+        startColor = meshRenderer.material.color;
         gradient = new Gradient();
 
         // Populate the color keys at the relative time 0 and 1 (0 and 100%)

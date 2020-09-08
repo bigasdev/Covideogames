@@ -1890,6 +1890,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5847162271234345349, guid: a07d8ba00711acb489844d61c9410b96,
         type: 3}
+      propertyPath: npcPrefabs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847162271234345349, guid: a07d8ba00711acb489844d61c9410b96,
+        type: 3}
       propertyPath: npcHolder
       value: 
       objectReference: {fileID: 797293569}
@@ -1901,8 +1906,14 @@ PrefabInstance:
     - target: {fileID: 5847162271234345349, guid: a07d8ba00711acb489844d61c9410b96,
         type: 3}
       propertyPath: spawnTimer
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5847162271234345349, guid: a07d8ba00711acb489844d61c9410b96,
+        type: 3}
+      propertyPath: npcPrefabs.Array.data[0]
+      value: 
+      objectReference: {fileID: 2857617936783605661, guid: 661641e17e4bb05478c89288003da080,
+        type: 3}
     - target: {fileID: 5847162271234345350, guid: a07d8ba00711acb489844d61c9410b96,
         type: 3}
       propertyPath: m_Name
@@ -2104,7 +2115,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1132396837
 GameObject:
@@ -3759,7 +3770,7 @@ PrefabInstance:
     - target: {fileID: 6169593413888669652, guid: 4d6d8c4d9f93d234fbcee12d67b823ba,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6169593413888669652, guid: 4d6d8c4d9f93d234fbcee12d67b823ba,
         type: 3}

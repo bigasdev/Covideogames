@@ -15,7 +15,8 @@ public class AiController : MonoBehaviour
     public float runFactor = 1.25f;
 
     public GameObject target;
-    GameObject mask;
+    public GameObject mask;
+    public GameObject mouth;
     PlayerController player;
     Health health;
 
@@ -60,12 +61,9 @@ public class AiController : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
+        health = GetComponent<Health>();
         agent = this.GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-        health = GetComponent<Health>();
-        mask = gameObject.transform.Find("BaseCharacter").gameObject;
-        mask = mask.gameObject.transform.Find("Specifics").gameObject;
-        mask = mask.gameObject.transform.Find("Mask").gameObject;
         if(GameObject.FindGameObjectWithTag("Finish") != null) hospitalWaypoint = GameObject.FindGameObjectWithTag("Finish").transform;
         audioSource = this.GetComponent<AudioSource>();
         socialDistanceIndicator = gameObject.transform.Find("Social Distance Indicator").gameObject;
@@ -201,6 +199,7 @@ public class AiController : MonoBehaviour
     public void WearMask()
     {
         mask.SetActive(true);
+        mouth.SetActive(false);
         GameStats.gameStats.peopleMasked += 1;
         wearingMask = true;
         health.infectionMultiplier -= .75f;
@@ -212,6 +211,8 @@ public class AiController : MonoBehaviour
     private void TakeOffMask()
     {
         mask.SetActive(false);
+        mouth.SetActive(true);
+
         GameStats.gameStats.peopleMasked -= 1;
         wearingMask = false;
         health.infectionMultiplier += .75f;

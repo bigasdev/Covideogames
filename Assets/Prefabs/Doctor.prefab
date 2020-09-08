@@ -1081,15 +1081,8 @@ MonoBehaviour:
   yellReadyIndicator: {fileID: 3434264187017262164}
   actionArea: {fileID: 414025245977496384}
   loseScreen: {fileID: 0}
-  score: {fileID: 0}
   washSFX: {fileID: 8300000, guid: d5737bdd10929cc439faab65e8d3f6df, type: 3}
-  npcs: []
-  sinks: []
-  sickPeople: []
   dirtyHands: 0
-  peopleHealed: 0
-  peopleLost: 0
-  peopleLostThreshold: 5
 --- !u!195 &266321538
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1140,6 +1133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 213364d4279cca347848618f94d1cacb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  body: {fileID: 509678281041054386}
   baseInfectionRate: 0
   infectionMultiplier: 1
   infectionLevel: 0
