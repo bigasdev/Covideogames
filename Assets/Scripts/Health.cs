@@ -34,7 +34,7 @@ public class Health : MonoBehaviour
     AudioSource audioSource;
     public AudioClip deathSound;
     public ParticleSystem deathFX;
-    public GameObject tombstonePrefab;
+    //public GameObject tombstonePrefab;
     private void Awake()
     {
 
@@ -50,6 +50,16 @@ public class Health : MonoBehaviour
     void Start()
     {
         SetupDiseaseGradient();
+        /* tá comentado pois essa mudança causou muitos bugs
+         * if(!this.gameObject.CompareTag("Player") && infectionLevel == 0)
+        {
+            if (Random.Range(0, 100) < 20)
+                infectionLevel = UnityEngine.Random.Range(0, 50);
+            else
+                infectionLevel = UnityEngine.Random.Range(0, 20);
+
+
+        }*/
     }
 
     private void SetupDiseaseGradient()
@@ -169,9 +179,15 @@ public class Health : MonoBehaviour
             if (this.gameObject.GetComponent<AiController>().wearingMask) GameStats.gameStats.peopleMasked--;
         }
 
-        AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position);
-        GameObject tombstone = Instantiate(tombstonePrefab, transform.position, Quaternion.identity, transform.parent);
-        Destroy(tombstone, 20f);
+        if (!GameManager.gameManager.ShouldWin())
+        {
+            AudioSource.PlayClipAtPoint(deathSound, Camera.main.transform.position);
+        }
+
+        //checar qtd de pontos pra ver qual áudio tocar.
+
+        /* GameObject tombstone = Instantiate(tombstonePrefab, transform.position, Quaternion.identity, transform.parent);
+        Destroy(tombstone, 20f);*/
         Destroy(this.gameObject);
     }
 

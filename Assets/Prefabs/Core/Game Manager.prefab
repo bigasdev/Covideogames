@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4292085039384832497}
   - component: {fileID: 8530600323444324959}
+  - component: {fileID: 2726851861764446163}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -48,9 +49,106 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winScreen: {fileID: 7695250452334580809}
   loseScreen: {fileID: 8353042791463215248}
-  musicAudioSource: {fileID: 0}
+  victorySFX: {fileID: 8300000, guid: 55e40cdcfcf892c4893f4aa94c202964, type: 3}
+  cheerSFX: {fileID: 8300000, guid: 1bf5796d8e4bd9c40bf21bffab3aa291, type: 3}
   gameIsOver: 0
   currentTime: 0
+--- !u!82 &2726851861764446163
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771906005349184268}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1545011941989343037
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -122,7 +220,8 @@ PrefabInstance:
         type: 3}
       propertyPath: goals
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: de6414aaadf6a954d9179d01b603b476,
+        type: 2}
     - target: {fileID: 3691150647944281409, guid: 2afd948d4ae4b874c8f46d8f204a0269,
         type: 3}
       propertyPath: playerScore
@@ -141,6 +240,11 @@ PrefabInstance:
     - target: {fileID: 3691150647944281409, guid: 2afd948d4ae4b874c8f46d8f204a0269,
         type: 3}
       propertyPath: goalsFulfilled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3691150647944281409, guid: 2afd948d4ae4b874c8f46d8f204a0269,
+        type: 3}
+      propertyPath: noGoal
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

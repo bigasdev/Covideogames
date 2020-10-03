@@ -1844,7 +1844,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Ganhe pontos mandando pessoas para o hospital e mantendo todos usando
-    m\xE1scara!\nSe 5 pessoas morrerem, ou se voc\xEA morrer, voc\xEA perde."
+    m\xE1scara!\nVoc\xEA perde quando algu\xE9m morrer. Tente acumular o m\xE1ximo
+    de pontos!"
 --- !u!222 &1686819875
 CanvasRenderer:
   m_ObjectHideFlags: 0

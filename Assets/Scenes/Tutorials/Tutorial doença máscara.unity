@@ -1835,8 +1835,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "A doen\xE7a se espalha pelo contato com pessoas infectadas, ou pela aspira\xE7\xE3o
-    de got\xEDculas de saliva, aeross\xF3is ou f\xF4mites com o v\xEDrus. Por isso,
-    para manter a sa\xFAde da popula\xE7\xE3o \xE9 preciso que todos usem m\xE1scara.\r\n"
+    de got\xEDculas de saliva. Por isso, para manter a sa\xFAde da popula\xE7\xE3o
+    \xE9 preciso que todos usem m\xE1scara.\r\n"
 --- !u!222 &1686819875
 CanvasRenderer:
   m_ObjectHideFlags: 0

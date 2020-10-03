@@ -6,6 +6,7 @@ TagManager:
   tags:
   - NPC
   - Waypoint
+  - Hospital
   layers:
   - Default
   - TransparentFX

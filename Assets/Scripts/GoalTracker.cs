@@ -64,8 +64,10 @@ public class GoalTracker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (noGoal) return;
         if (ProcessWinConditions())
         {
+         
             goalsFulfilled = true;
         
         }

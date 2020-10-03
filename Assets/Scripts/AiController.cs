@@ -7,7 +7,8 @@ using UnityEngine.SocialPlatforms;
 public enum Status
 {
     Normal,
-    SocialDistance
+    SocialDistance,
+    GoHome
 }
 public class AiController : MonoBehaviour
 {
@@ -55,6 +56,10 @@ public class AiController : MonoBehaviour
     float timeToStay;
     bool checkedForTime = false;
 
+    public float goHomeChance = 5f;
+    public Transform exit;
+
+
     float actionCooldown = 1f;
     float cooldownTimer = Mathf.Infinity;
 
@@ -64,10 +69,12 @@ public class AiController : MonoBehaviour
         health = GetComponent<Health>();
         agent = this.GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-        if(GameObject.FindGameObjectWithTag("Finish") != null) hospitalWaypoint = GameObject.FindGameObjectWithTag("Finish").transform;
+        if(GameObject.FindGameObjectWithTag("Hospital") != null) hospitalWaypoint = GameObject.FindGameObjectWithTag("Hospital").transform;
         audioSource = this.GetComponent<AudioSource>();
         socialDistanceIndicator = gameObject.transform.Find("Social Distance Indicator").gameObject;
         goalLocations = GameObject.FindGameObjectsWithTag("Waypoint");
+        if (GameObject.FindGameObjectWithTag("Finish")) exit = GameObject.FindGameObjectWithTag("Finish").transform;
+
 
     }
     void Start()
@@ -116,9 +123,18 @@ public class AiController : MonoBehaviour
     private void ProcessStates()
     {
         timeInThisStatus += Time.deltaTime;
-        if (status == Status.SocialDistance & timeInThisStatus > 5f)
+        if (status == Status.SocialDistance && timeInThisStatus > 5f)
         {
             ChangeStatus(Status.Normal);
+        }
+        if(status == Status.Normal && timeInThisStatus > 5f && exit)
+        {
+            if (UnityEngine.Random.Range(0, 100) < goHomeChance)
+            {
+                ChangeStatus(Status.GoHome);
+            }
+            timeInThisStatus = 0;
+
         }
     }
 
@@ -126,17 +142,38 @@ public class AiController : MonoBehaviour
     {
         if (goHospital)
         {
-            if(agent.destination != hospitalWaypoint.transform.position)
+            if (agent.destination != hospitalWaypoint.transform.position)
             {
                 agent.SetDestination(hospitalWaypoint.transform.position);
             }
         }
         else if (status == Status.SocialDistance)
         {
-                Flee();
-                    }
+            Flee();
+        }
         //else Wander();
+        /*else if (status == Status.GoHome)
+        {
+            GoHome();
+        }*/
         else WaypointWander();
+
+    }
+
+    private void GoHome()
+    {
+        if(agent.destination != exit.position) agent.SetDestination(exit.position);
+
+        if (Vector3.Distance(exit.position,transform.position) <3f)
+        {
+            GameStats.gameStats.npcs.Remove(this);
+            GameStats.gameStats.sickPeopleList.Remove(health);
+            GameStats.gameStats.peopleHealed++;
+            if (wearingMask) GameStats.gameStats.peopleMasked--;
+
+            Destroy(this.gameObject);
+        }
+        
     }
 
     private void WaypointWander()
@@ -298,6 +335,11 @@ public class AiController : MonoBehaviour
             ChooseRandomWaypoint();
             socialDistanceIndicator.SetActive(false);
             timeInThisStatus = 0;
+        }
+        if (newStatus == Status.GoHome)
+        {
+            ResetAgent();
+            socialDistanceIndicator.SetActive(false);
         }
     }
 }
