@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerController : MonoBehaviour
 {
@@ -54,6 +55,8 @@ public class PlayerController : MonoBehaviour
         {
             ProcessMovement();
             ProcessActions();
+            //ProcessMovementMobile();
+            //ProcessActionsMobile();
         }
         yellTimer += Time.deltaTime;
         if (yellTimer > yellCooldown)
@@ -71,11 +74,44 @@ public class PlayerController : MonoBehaviour
     float minimumHeldDuration = 1.25f;
     float keyPressedTime = 0;
     bool holdingKey = false;
-    private void ProcessActions()
+    void ProcessActionsMobile()
+    {
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Began)
+            {
+                keyPressedTime = 0;
+                holdingKey = false;
+            }
+            else if(touch.phase == TouchPhase.Stationary)
+            {
+                keyPressedTime += Time.deltaTime;
+                if (keyPressedTime > minimumHeldDuration)
+                {
+                    holdingKey = true;
+                    EnforceSocialDistance();
+
+                }
+            }
+            else if (touch.phase == TouchPhase.Ended)
+            {
+                if (!holdingKey)
+                {
+                    StartCoroutine(ActivateActionArea());
+                }
+            }
+        }
+    }
+    void ProcessMovementMobile()
     {
 
+    }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+
+    private void ProcessActions()
+    {
+       if (Input.GetKeyDown(KeyCode.Space))
         {
             keyPressedTime = 0;
             holdingKey = false;
@@ -140,6 +176,7 @@ public class PlayerController : MonoBehaviour
     void GetMovementInput()
     {
         input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+
     }
 
 
