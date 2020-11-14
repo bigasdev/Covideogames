@@ -20,7 +20,8 @@ public class SceneLoader: MonoBehaviour
 
     public void LoadNextScene()
     {
-        SceneManager.LoadScene(nextScene);
+        if (nextScene >= SceneManager.sceneCountInBuildSettings) SceneManager.LoadScene(0);
+        else SceneManager.LoadScene(nextScene);
     }
 
     public void Reload()

@@ -12,8 +12,10 @@ public class GameManager : MonoBehaviour
 	AudioSource musicAudioSource;
 	public AudioClip victorySFX;
 	public AudioClip cheerSFX;
+	bool hasAudio = false;
 
 	public bool gameIsOver = false;
+	
 
 
 
@@ -22,6 +24,11 @@ public class GameManager : MonoBehaviour
 	// Start is called before the first frame update
 	void Awake()
 	{
+		if (GameObject.FindGameObjectWithTag("Music") != null) {
+			hasAudio = true;
+			musicAudioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>(); }
+
+
 		// set the current time to the startTime specified
 		currentTime = 0;
 
@@ -39,6 +46,7 @@ public class GameManager : MonoBehaviour
 	{
 		if (!gameIsOver)
 		{
+			UpdateMusic();
 
 			if (GoalTracker.goalTracker.goalsFulfilled)
 			{  // check to see if beat game
@@ -57,6 +65,10 @@ public class GameManager : MonoBehaviour
 
 			}
 		}
+	}
+	private void UpdateMusic()
+	{
+		musicAudioSource.pitch += GameStats.gameStats.score / 100;
 	}
 	public bool ShouldWin()
 	{
@@ -102,6 +114,11 @@ public class GameManager : MonoBehaviour
 			if (SceneManager.GetActiveScene().name == "Park Hard")
 			{
 				AudioSource.PlayClipAtPoint(cheerSFX, Camera.main.transform.position);
+				if (hasAudio)
+				{
+					musicAudioSource.Stop();
+					Destroy(Música.music.gameObject);
+				}
 			}
 		}
 	}
