@@ -33,11 +33,15 @@ public class PlayerController : MonoBehaviour
     Health health;
     private Quaternion targetRotation;
 
+   
+    [SerializeField] Transform moveSprite;
 
+    private Joystick joystick;
 
 
     private void Awake()
     {
+        joystick = GameObject.FindGameObjectWithTag("Joystick").GetComponent<Joystick>();
         audioSource = GetComponent<AudioSource>();
 
         health = GetComponent<Health>();
@@ -68,7 +72,10 @@ public class PlayerController : MonoBehaviour
                 Destroy(indicator, 2f);
             }
         }
-
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            MobileManager();
+        }
     }
 
     float minimumHeldDuration = 1.25f;
@@ -105,7 +112,10 @@ public class PlayerController : MonoBehaviour
     }
     void ProcessMovementMobile()
     {
-
+       if(joystick.Horizontal > 0 || joystick.Horizontal < 0 || joystick.Vertical > 0 || joystick.Vertical < 0)
+       {
+           transform.Translate(Vector3.forward * Time.deltaTime * 4);
+       }
     }
 
 
@@ -178,7 +188,18 @@ public class PlayerController : MonoBehaviour
         input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
 
     }
-
+    
+    void MobileManager()
+    {
+        ProcessMovementMobile();
+        MoveSpriteManager();
+    }
+    void MoveSpriteManager()
+    {
+        moveSprite.position = new Vector3(joystick.Horizontal + transform.position.x, 0, joystick.Vertical + transform.position.z);
+        transform.LookAt(new Vector3(moveSprite.position.x, 0, moveSprite.position.z));
+        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
+    }
 
     void Rotate()
     {
