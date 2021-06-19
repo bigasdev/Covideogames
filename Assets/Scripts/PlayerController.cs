@@ -38,7 +38,8 @@ public class PlayerController : MonoBehaviour
 
     private Joystick joystick;
 
-
+    public bool moving, haveMask;
+    public GameObject notificationPrefab, notificationUi;
     private void Awake()
     {
         joystick = GameObject.FindGameObjectWithTag("Joystick").GetComponent<Joystick>();
@@ -51,6 +52,12 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         if (GameManager.gameManager.gameIsOver) return;
+        if(!haveMask){
+            if(notificationUi == null) notificationUi = Instantiate(notificationPrefab);
+        }
+        else{
+            if(notificationUi != null) Destroy(notificationUi);
+        }
         if (health.infectionLevel >= 100)
         {
             TriggerPlayerDeath();
@@ -97,7 +104,7 @@ public class PlayerController : MonoBehaviour
                 if (keyPressedTime > minimumHeldDuration)
                 {
                     holdingKey = true;
-                    EnforceSocialDistance();
+                    if(!moving)EnforceSocialDistance();
 
                 }
             }
@@ -115,6 +122,10 @@ public class PlayerController : MonoBehaviour
        if(joystick.Horizontal > 0 || joystick.Horizontal < 0 || joystick.Vertical > 0 || joystick.Vertical < 0)
        {
            transform.Translate(Vector3.forward * Time.deltaTime * 4);
+           moving = true;
+       }
+       else if(joystick.Horizontal == 0 && joystick.Vertical == 0){
+           moving = false;
        }
     }
 
@@ -149,9 +160,9 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator ActivateActionArea()
     {
-        actionArea.enabled = true;
-        yield return new WaitForSeconds(.2f);
         actionArea.enabled = false;
+        yield return new WaitForSeconds(.2f);
+        actionArea.enabled = true;
     }
 
     private void EnforceSocialDistance()
@@ -192,12 +203,13 @@ public class PlayerController : MonoBehaviour
     void MobileManager()
     {
         ProcessMovementMobile();
+        ProcessActionsMobile();
         MoveSpriteManager();
     }
     void MoveSpriteManager()
     {
-        moveSprite.position = new Vector3(joystick.Horizontal + transform.position.x, 0, joystick.Vertical + transform.position.z);
-        transform.LookAt(new Vector3(moveSprite.position.x, 0, moveSprite.position.z));
+        moveSprite.position = new Vector3(joystick.Horizontal + transform.position.x, -0.88f, joystick.Vertical + transform.position.z);
+        transform.LookAt(new Vector3(moveSprite.position.x,-0.88f, moveSprite.position.z));
         transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
     }
 

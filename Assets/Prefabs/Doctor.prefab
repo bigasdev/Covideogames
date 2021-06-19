@@ -1248,6 +1248,11 @@ MonoBehaviour:
   washSFX: {fileID: 8300000, guid: d5737bdd10929cc439faab65e8d3f6df, type: 3}
   dirtyHands: 0
   moveSprite: {fileID: 6197835766144849583}
+  moving: 0
+  haveMask: 1
+  notificationPrefab: {fileID: 2364918110495039935, guid: 884b62203c81bae4dab2095b6af0294d,
+    type: 3}
+  notificationUi: {fileID: 0}
 --- !u!1 &4590383777174681344
 GameObject:
   m_ObjectHideFlags: 0
